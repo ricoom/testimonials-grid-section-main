@@ -20,7 +20,7 @@
   }
 
   body{
-    padding:5% 10% 5% 10%;
+    padding:5% 12% 5% 12%;
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: var(--Lightgrayishblue);
     color: var(--White);
@@ -28,7 +28,7 @@
   }
   main{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(16rem,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
     grid-gap: 1rem;
     box-shadow: 1px 1px 5px var(--Lightgray),1px 5px 15px var(--Lightgray);
   }
