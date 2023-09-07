@@ -1,0 +1,103 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 13px;
+  }
+  :root{
+--Moderateviolet: hsl(263, 55%, 52%);
+--Verydarkgrayishblue: hsl(217, 19%, 35%);
+--Verydarkblackishblue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+
+--Lightgray: hsl(0, 0%, 81%);
+--Lightgrayishblue: hsl(210, 46%, 95%);
+  }
+
+  body{
+    padding:5% 12% 5% 12%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: var(--Lightgrayishblue);
+    color: var(--White);
+
+  }
+  main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem,1fr));
+    grid-gap: 1rem;
+    box-shadow: 1px 1px 5px var(--Lightgray),1px 5px 15px var(--Lightgray);
+  }
+  .card{
+    min-height: 250px;
+    border-radius: 7px;
+    padding: 16px;
+  }
+  .card:nth-child(3){
+    background-color: var(--White);
+    grid-row: span 2;
+  }
+  .card:nth-child(4){
+    background-color: var(--White);
+    
+  }
+  .card:nth-child(2){
+    background-color: var(--Verydarkgrayishblue);
+  }
+ 
+  .card:nth-child(1){
+    background-color: var(--Moderateviolet);
+    grid-column: span 2;
+  }
+  .card:nth-child(5){
+    background-color: var(--Verydarkblackishblue);
+    grid-column: span 2;
+  }
+/* content */
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.prof-pic img{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+}
+.prof-info p{
+    opacity: 50%;
+    font-weight: 500;
+    font-size: .8em;
+}
+.test-head h2{
+    font-size: 1.3em;
+    margin-top: 5px;
+    
+ 
+}
+.test-body p{
+    margin-top: 8px;
+    font-size: .9em;
+    font-weight: 500;
+    line-height: 1.5em;
+    opacity: 70%;
+
+
+}
+.card.dark{
+    color: var(--Verydarkgrayishblue);
+}
+  @media only screen and (max-width:375px) {
+    main{
+       
+       display: block;
+       
+      }
+      .card{
+        margin-bottom: 10px;
+      }
+  }
